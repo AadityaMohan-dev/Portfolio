@@ -1,0 +1,32 @@
+img{
+    height:30rem;
+    border-radius: 20px;
+    box-shadow: 1em 1em 40em var(--theme-color);
+
+}
+
+.profile{
+    margin-top: 10%;
+}
+.text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h1{
+    color: blueviolet;
+  }
+h2{
+    margin-left: 6%;
+}
+p{
+    font-size: large;
+}
+.btn-proceed{
+    width: 30%;
+}
+
+.right-menu{
+    margin-top: 10%;
+}

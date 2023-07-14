@@ -1,1 +1,144 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+:root{
+    --background-color : rgb(32, 32, 32); 
+    --text-color : white;
+    --theme-color : blueviolet;
+}
+
+/* [data-theme = "dark"]{
+background-color: rgb(32, 32, 32);
+color: rgb(255, 255, 255);
+} */
+
+body{
+    background-color: var(--background-color);
+    overflow-x: hidden;
+}
+
+.navbar{
+  justify-content: space-around;
+  flex-direction: column;
+  position: fixed;
+}
+
+/* right menu */
+
+.btn-right:hover{
+  background-color: var(--theme-color);
+}
+
+
+/* about component */
+.data{
+  color: var(--text-color);
+}
+.heading0{
+  color: var(--text-color);
+  }
+  
+  .heading1{
+      color: var(--theme-color);
+  }
+  
+  h3{
+      color: var(--text-color);
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      margin-top: 5%;
+  }
+
+ 
+#date{
+    color: var(--text-color);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#text{
+  margin-top: 5%;
+  color: var(--text-color);
+}
+
+/* home component */
+
+img{
+  border: 1px solid var(--background-color);
+}
+h2{
+  color: var(--text-color);
+}
+p{color: var(--text-color);}
+
+
+
+/* button css */
+
+/*Button CSS */
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+  

@@ -1,0 +1,17 @@
+.btn-right{
+    background-color: gray;
+    color: white;
+}
+
+.btn-right:hover{
+    background-color: var(--theme-color);
+}
+
+
+
+@media(max-width:768px){
+    .navbar{
+        flex-direction: row;
+        align-items: center;
+    }
+}
